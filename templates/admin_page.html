@@ -1,0 +1,9 @@
+<!doctype html>
+<html>
+<head><title>Página de Administrador</title></head>
+<body>
+    <h1>Bem-vindo à área de administradores, {{ session.get("username") }}!</h1>
+    <p>Conteúdo exclusivo para administradores.</p>
+    <a href="{{ url_for('main.index') }}">Voltar à página inicial</a>
+</body>
+</html>

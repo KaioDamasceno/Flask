@@ -1,0 +1,9 @@
+<!doctype html>
+<html>
+<head><title>Página de Usuário</title></head>
+<body>
+    <h1>Bem-vindo à área de usuários, {{ session.get("username") }}!</h1>
+    <p>Conteúdo exclusivo para usuários logados como "user".</p>
+    <a href="{{ url_for('main.index') }}">Voltar à página inicial</a>
+</body>
+</html>

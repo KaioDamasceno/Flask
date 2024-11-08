@@ -1,0 +1,175 @@
+/* Reset de estilo básico */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    border-radius: 5px;
+}
+
+header h1 {
+    font-weight: normal;
+}
+
+/* Botão estilizado */
+button,
+a.button {
+    background-color: #2563eb;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover,
+a.button:hover {
+    background-color: #1e40af;
+}
+
+/* Card estilizado */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #1f2937;
+    margin-bottom: 15px;
+}
+
+/* Link estilizado */
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
+
+/* Flash messages */
+.flash-message {
+    padding: 10px 20px;
+    margin: 15px 0;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.flash-message.success {
+    background-color: #4caf50;
+    color: white;
+}
+
+.flash-message.error {
+    background-color: #f44336;
+    color: white;
+}
+
+.flash-message.info {
+    background-color: #2196f3;
+    color: white;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    align-self: flex-start;
+    background-color: #2563eb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1e40af;
+}
+
+/* Erro personalizado */
+.error-page {
+    text-align: center;
+    padding: 50px 20px;
+    color: #b91c1c;
+}
+
+.error-page h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.error-page p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.error-page a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 1px solid #2563eb;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.error-page a:hover {
+    background-color: #2563eb;
+    color: #fff;
+}

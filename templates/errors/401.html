@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+<head>
+    <title>401 - Não autorizado</title>
+</head>
+<body>
+    <h1>Erro 401: Não autorizado</h1>
+    <p>Você não tem permissão para acessar esta página. Por favor, faça login.</p>
+    <a href="{{ url_for('auth.login') }}">Ir para a página de login</a>
+</body>
+</html>
